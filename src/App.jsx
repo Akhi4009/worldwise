@@ -9,7 +9,8 @@ import Login from "./pages/Login";
 import CityList from "./components/city/CityList";
 import City from "./components/city/City";
 import CoutryList from "./components/country/CountryList";
-import { CityProvider } from "./components/context/CityContext";
+import Form from "./components/form/Form"
+import { CityProvider } from "./context/CityContext";
 
 function App() {
  return (
@@ -22,11 +23,11 @@ function App() {
     <Route path="cities" element={<CityList />} />
     <Route path="cities/:id" element={<City/>} />
     <Route path="countries" element={<CoutryList/>} />
-    <Route path="form" element={<form>Form</form>} />
+    <Route path="form" element={<Form/>} />
     </Route>
-    <Route path="/product" element={<Product/>}/>
-    <Route path="/pricing" element={<Pricing/>}/>
-    <Route path="/login" element={<Login/>}/>
+    <Route path="product" element={<Product/>}/>
+    <Route path="pricing" element={<Pricing/>}/>
+    <Route path="login" element={<Login/>}/>
     <Route path="*" element={<PageNotFound/>}/>
     </Routes>
     </BrowserRouter>
