@@ -11,14 +11,20 @@ import City from "./components/city/City";
 import CoutryList from "./components/country/CountryList";
 import Form from "./components/form/Form"
 import { CityProvider } from "./context/CityContext";
-
+import {AuthProvider} from "./context/AuthContext"
+import ProtectedRoute from "./components/route/ProtectedRoute"
 function App() {
  return (
+  <AuthProvider>
     <CityProvider>
     <BrowserRouter>
     <Routes>
     <Route index element={<Homepage/>}/>
-    <Route path="app" element={<AppLayout/>}>
+    <Route path="app" element={
+    <ProtectedRoute>
+      <AppLayout/>
+    </ProtectedRoute>
+    }>
     <Route index element={<CityList />} />
     <Route path="cities" element={<CityList />} />
     <Route path="cities/:id" element={<City/>} />
@@ -32,6 +38,7 @@ function App() {
     </Routes>
     </BrowserRouter>
     </CityProvider>
+    </AuthProvider>
   )
 }
 
