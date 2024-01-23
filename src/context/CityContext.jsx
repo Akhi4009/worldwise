@@ -9,34 +9,55 @@ function CityProvider({children}) {
     const [isLoading,setIsLoading] = useState(false);
     const [currentCity,setCurrentCity] = useState({});
 
- useEffect(()=>{
-  async function fetchCities(){
+    useEffect(()=>{
+      async function fetchCities(){
+        setIsLoading(true);
+        try {
+          const res = await fetch(`${base_url}/cities`);
+          const data = await res.json();
+          setCities(data);
+        } catch (error) {
+          throw new Error('There was an error loading data');
+        }finally{
+          setIsLoading(false);
+        }
+      }
+      fetchCities()
+    },[])
+
+    async function getCity(id){
+      setIsLoading(true);
+      try {
+        const res = await fetch(`${base_url}/cities/${id}`);
+        const data = await res.json();
+        setCurrentCity(data);
+      } catch (error) {
+        throw new Error('There was an error loading data');
+      }finally{
+        setIsLoading(false);
+      }
+      }
+
+    async function addCity(newCity){
     setIsLoading(true);
     try {
-      const res = await fetch(`${base_url}/cities`);
+      const res = await fetch(`${base_url}/cities`,{
+        method: "POST",
+        body: JSON.stringify(newCity),
+        headers:{
+          "Content-Type": "application/json",
+        }
+      });
       const data = await res.json();
-      setCities(data);
+      setCities([...cities,data]);
     } catch (error) {
-      throw new Error('There was an error loading data');
+      throw new Error('There was an error in posting data');
     }finally{
       setIsLoading(false);
     }
-  }
-  fetchCities()
- },[])
+    }
 
- async function getCity(id){
-   setIsLoading(true);
-   try {
-     const res = await fetch(`${base_url}/cities/${id}`);
-     const data = await res.json();
-     setCurrentCity(data);
-   } catch (error) {
-     throw new Error('There was an error loading data');
-   }finally{
-     setIsLoading(false);
-   }
-   }
+   
 
   return (
     <CityContext.Provider value={{
@@ -44,6 +65,7 @@ function CityProvider({children}) {
         isLoading,
         currentCity,
         getCity,
+        addCity,
     }}>
     {children}
     </CityContext.Provider>
