@@ -37,111 +37,15 @@
       "id": "98443197"
     },
     {
-      "id": "d4a4",
-      "cityName": "Lambhua",
+      "id": "f8b4",
+      "cityName": "Lucknow",
       "country": "India",
-      "date": "2024-01-23T10:23:07.868Z",
+      "date": "2024-01-23T11:11:58.642Z",
       "emoji": "🇮🇳",
-      "notes": "good city",
+      "notes": "Capital",
       "position": {
-        "lat": "26.259463921584558",
-        "lng": "82.14896610930741"
-      }
-    },
-    {
-      "id": "ac2d",
-      "cityName": "Phulpur",
-      "country": "India",
-      "date": "2024-01-23T10:26:59.898Z",
-      "emoji": "🇮🇳",
-      "notes": "historical city ",
-      "position": {
-        "lat": "25.413508756097336",
-        "lng": "82.06709772607543"
-      }
-    },
-    {
-      "id": "0117",
-      "cityName": "Jaunpur",
-      "country": "India",
-      "date": "2024-01-23T10:30:20.170Z",
-      "emoji": "🇮🇳",
-      "notes": "Up India",
-      "position": {
-        "lat": "25.720735431414134",
-        "lng": "82.76817784286466"
-      }
-    },
-    {
-      "id": "bde5",
-      "cityName": "Gorakhpur",
-      "country": "India",
-      "date": "2024-01-23T10:31:45.695Z",
-      "emoji": "🇮🇳",
-      "notes": "Goraknath mandir",
-      "position": {
-        "lat": "26.67691333347732",
-        "lng": "83.39498751638952"
-      }
-    },
-    {
-      "id": "6582",
-      "cityName": "Shuklagandaki",
-      "country": "Nepal",
-      "date": "2024-01-23T10:32:21.983Z",
-      "emoji": "🇳🇵",
-      "notes": "Country of maa sita.",
-      "position": {
-        "lat": "28.033198246204815",
-        "lng": "84.06487280780524"
-      }
-    },
-    {
-      "id": "49fb",
-      "cityName": "Sarojani Nagar tehsil",
-      "country": "India",
-      "date": "2024-01-23T10:37:50.592Z",
-      "emoji": "🇮🇳",
-      "notes": "Capital of Uttar Pradesh. Nawabo ka sahar.",
-      "position": {
-        "lat": "26.765230773343916",
-        "lng": "81.02223237439132"
-      }
-    },
-    {
-      "id": "fc46",
-      "cityName": "Delhi",
-      "country": "India",
-      "date": "2024-01-23T10:46:42.110Z",
-      "emoji": "🇮🇳",
-      "notes": "Capital of india",
-      "position": {
-        "lat": "28.555576274278536",
-        "lng": "77.141515515194"
-      }
-    },
-    {
-      "id": "ae3e",
-      "cityName": "Delhi",
-      "country": "India",
-      "date": "2024-01-23T10:47:48.203Z",
-      "emoji": "🇮🇳",
-      "notes": "captal",
-      "position": {
-        "lat": "28.555576274278536",
-        "lng": "77.141515515194"
-      }
-    },
-    {
-      "id": "7283",
-      "cityName": "Brihuega",
-      "country": "Spain",
-      "date": "2024-01-23T10:48:20.542Z",
-      "emoji": "🇪🇸",
-      "notes": "dfgd",
-      "position": {
-        "lat": "40.6972992210733",
-        "lng": "-2.9122686653191847"
+        "lat": "26.82407098310403",
+        "lng": "80.98928990320509"
       }
     }
   ]
