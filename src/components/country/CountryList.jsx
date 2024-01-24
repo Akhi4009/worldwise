@@ -2,7 +2,6 @@ import React from 'react'
 import styles from "./CountryList.module.css";
 import Spinner from "../layout/Spinner";
 import CountryItem from './CountryItem';
-import Message from '../layout/Message';
 import { useCities } from '../../context/CityContext';
 
 function CountryList() {
